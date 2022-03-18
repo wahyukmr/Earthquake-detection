@@ -65,6 +65,7 @@ def tampilkan_data(result):
         print("tidak bisa menemukan dat gempa terkini")
         return
 
+
     print('gempa terakhir berdasarkan BMKG')
     print(f"waktu {result['waktu']}")
     print(f"Magnitude {result['magnitude']}")
