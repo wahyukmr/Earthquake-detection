@@ -12,7 +12,6 @@ def ekstraksi_data():
     Dirasakan (Skala MMI): II Kaimana
     :return:
     """
-
     try:
         content = requests.get('https://bmkg.go.id')
     except Exception:
