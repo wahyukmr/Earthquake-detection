@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="Earthquakedetection",
-    version="0.0.2",
+    version="0.0.3",
     author="wahyukmr",
     author_email="maryu9292@gmail.com",
     description="This package will detect the latest earthquakes from BMKG (Meteorology, Climatology, and "
