@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 
+description = 'to get the latest earthquake in indonesia from BMKG.go.id'
+
 
 def ekstraksi_data():
     """
@@ -75,5 +77,6 @@ def tampilkan_data(result):
 
 
 if __name__ == '__main__':
+    print('description package', description)
     result = ekstraksi_data()
     tampilkan_data(result)
