@@ -71,7 +71,7 @@ class GempaTerkini:
 
     def tampilkan_data(self):
         if self.result is None:
-            print("tidak bisa menemukan dat gempa terkini")
+            print("tidak bisa menemukan data gempa terkini")
             return
 
         print('gempa terakhir berdasarkan BMKG')
@@ -90,5 +90,6 @@ class GempaTerkini:
 if __name__ == '__main__':
     gempa_di_indonesia = GempaTerkini()
     print('description package', gempa_di_indonesia.description)
+    gempa_di_indonesia.run()
     # gempa_di_indonesia.ekstraksi_data()
     # gempa_di_indonesia.tampilkan_data()
