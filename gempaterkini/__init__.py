@@ -13,18 +13,9 @@ class GempaTerkini:
         self.result = None
 
     def ekstraksi_data(self):
-        """
-        waktu: 11 maret 2022, 18:49:52 WIB
-        Magnitude: 4.0
-        Kedalaman: 10 km
-        Lokasi: LS=4.06 BT=133.51
-        Pusat Gempa: Pusat gempa berada di darat 98 Km Barat Daya Kaimana
-        Dirasakan (Skala MMI): II Kaimana
-        :return:
-        """
         try:
             content = requests.get('https://bmkg.go.id')
-        except Exception:
+        except ZeroDivisionError:
             return None
 
         if content.status_code == 200:
